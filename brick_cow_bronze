@@ -1,0 +1,10 @@
+large = 77
+s,m = 17,25
+
+def f(l,s,m):
+  for i in range(l//s):
+    if not (i*m)+(s*(0-(i-(l//s)))) > l and (i*m)+(s*(0-(i-(l//s)))) > (l//s)*s:
+      highest = (i*m)+(s*(0-(i-(l//s))))
+  return highest
+  
+print f(large,s,m)
